@@ -34,3 +34,26 @@ Instead of manually configuring the server, Ansible automatically installs Nginx
        ▼
 🚀 Website
 
+
+⚙️ Ansible Tasks
+
+The Ansible playbook automatically performs:
+
+📦 Updates Ubuntu packages
+🌐 Installs Nginx
+▶️ Starts and enables Nginx
+📄 Deploys the website to /var/www/html/
+🔄 Automation Flow
+📦 Update Packages
+        ↓
+🌐 Install Nginx
+        ↓
+⚙️ Configure Web Server
+        ↓
+▶️ Start Nginx
+        ↓
+📄 Deploy Website
+        ↓
+🚀 Website Live
+
+
