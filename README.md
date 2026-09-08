@@ -33,3 +33,42 @@ Instead of manually configuring the server, Ansible automatically installs Nginx
        │
        ▼
 🚀 Website
+
+⚙️ Ansible Tasks
+
+The Ansible playbook:
+
+Updates Ubuntu packages
+Installs Nginx
+Starts and enables Nginx
+Deploys the website to /var/www/html/
+📂 Project Structure
+ansible-webserver/
+├── inventory
+├── playbook.yml
+├── website/
+│   └── index.html
+├── .gitignore
+└── README.md
+🚀 How to Run
+Test EC2 connection
+ansible -i inventory webservers -m ping
+Run the playbook
+ansible-playbook -i inventory playbook.yml
+Access the website
+
+Open:
+
+http://YOUR_EC2_PUBLIC_IP
+🔐 Security
+
+Private SSH keys are excluded from GitHub using .gitignore.
+
+*.pem
+*.key
+
+Never upload your AWS private key to GitHub.
+
+🎯 Objective
+
+The goal of this project is to demonstrate server configuration, web server deployment, and infrastructure automation using Ansible and AWS.
